@@ -2,7 +2,7 @@ import React from 'react'
 import fetchPosts from '../fetchPosts'
 import BookCard from '../components/BookCard'
 
-async function page() {
+export default async function page() {
     let categories = {}
     const posts = await fetchPosts()
 
@@ -28,7 +28,9 @@ async function page() {
                         console.log(post)
                         console.log("hihi")
                         return (
+
                             <div key={post.id}>
+                                hello
                                 <div>post.title</div>
                             </div>
                         )
@@ -42,4 +44,3 @@ async function page() {
   )
 }
 
-export default page

@@ -6,13 +6,13 @@ function NavBar() {
         <div>Read Only Blogs</div>
         <div className='flex'>
             <div className='mr-2'>
-                <a href=""></a>Posts
+                <Link href="/">Posts</Link>
             </div>
             <div className='mr-2'>
                 <Link href="/categories">Categories</Link>
             </div>
             <div className='mr-2'>
-                
+                <Link href="/authors"> Authors</Link>
             </div>
         </div>
     </div>
